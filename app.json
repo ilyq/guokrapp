@@ -1,0 +1,14 @@
+{
+    "pages": [
+      "pages/guide/guide",
+      "pages/index/index"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#08AE5C",
+      "navigationBarTextStyle": "white",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+    "debug": true
+}

@@ -1,0 +1,8 @@
+<!--pages/guide/guide.wxml-->
+<view
+    style="width: 100%; height: 100vh; background-size:100% 100vh; background-image: url('https://api.gzxunzhi.cn/images/images.jpg');"
+>
+    <div class="image-div">
+        <image class="image-icon" src="https://api.gzxunzhi.cn/images/slogan_colorful.png"></image>
+    </div>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/index/index.wxml-->
+
+<!--导航栏-->
+<!--<scroll-view class="scroll-view" scroll-x="true" style="width: 100%" scroll-left="{{scrollTop}}">
+    <view wx:for="{{navTabText}}" wx:key="unique" data-index="{{index}}" class="scroll-view-item {{currentTab==index ? 'active': ''}}" bindtap="navbarTap">{{item}}</view>
+</scroll-view>-->
+
+<!--<swiper style="height: {{screenheight}}rpx;"  class="swiper-content" current="{{currentTab}}" duration="200" bindchange="swiperChange">-->
+  <swiper-item class="swiper-item">
+      <!--轮播图-->
+      <swiper class="handpick-swiper" circular="true" autoplay="false" interval="300000">
+        <block wx:for="{{handpickImg}}"  wx:key="unique" >
+          <swiper-item>
+            <view>
+              <image class="handpick-swiper-image" src="http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl={{item.picture}}"></image>
+              <view class="custom-title-view">{{item.custom_title}}
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <!--主题-->
+      <view class="article" wx:for="{{articleData}}" wx:key="unique">
+
+        <!--标题 内容 图片-->
+        <view class="article-item-content">
+          <view class="article-item-text">
+            <view class="article-item-content-title">{{item.title}}</view>
+            <view class="article-item-content-summary">{{item.summary}}</view>
+          </view>
+          <image class="headline_img_tb" src="http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl={{item.headline_img}}"></image>
+        </view>
+
+        <!--主题底部-->
+        <view class="article-item-bottom">
+
+          <!--底部 头像 用户名 分类-->
+          <view class="bottom-left">
+              <image class="user-image" src="http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl={{item.source_data.image}}"></image>
+              <view class="article-item-username">{{item.source_name}}</view>
+              <view class="article-item-category">{{item.category}}</view>
+          </view>
+
+          <!--底部 评论数 点赞 分享-->
+          <view class="bottom-right">
+            <image style="height: 40rpx; width: 40rpx;" src="{{replyImage}}"></image>
+            <view class="article-item" style="margin-left: 10rpx; line-height: 60rpx;">{{item.likings_count}}</view>
+            <image style="height: 40rpx; width: 40rpx; margin-left: 30rpx" src="{{likeImage}}"></image>
+            <view class="article-item" style="margin-left: 10rpx; line-height: 60rpx;">{{item.replies_count}}</view>
+            <image style="height: 40rpx; width: 40rpx; margin-left: 30rpx" src="{{shareImage}}"></image>
+          </view>
+        </view>
+        
+        <!--分割线-->
+        <view class="article-bottom-line"></view>
+      </view>
+  </swiper-item>
+  
+  
+  <!--<swiper-item><view>我是tab2</view></swiper-item>
+  <swiper-item><view>我是tab3</view></swiper-item>
+  <swiper-item><view>我是tab4</view></swiper-item>
+  <swiper-item><view>我是tab5</view></swiper-item>
+  <swiper-item><view>我是tab6</view></swiper-item>
+  <swiper-item><view>我是tab7</view></swiper-item>
+  <swiper-item><view>我是tab8</view></swiper-item>-->
+<!--</swiper>-->

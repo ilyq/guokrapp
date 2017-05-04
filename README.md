@@ -11,6 +11,10 @@
 - [ ] 主题点赞
 - [ ] 主题分享
 
+**接口说明**
+
+[https://github.com/ilyq/guokrapp/wiki](https://github.com/ilyq/guokrapp/wiki)
+
 **效果**
 
 ![](guokr.gif)
